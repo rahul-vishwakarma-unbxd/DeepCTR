@@ -2,11 +2,11 @@ name: CI_TF2
 
 on:
   push:
-    paths:
+    path:
       - 'deepctr/*'
       - 'tests/*'
   pull_request:
-    paths:
+    path:
       - 'deepctr/*'
       - 'tests/*'
 
