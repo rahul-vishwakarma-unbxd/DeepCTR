@@ -2,7 +2,8 @@ import pandas as pd
 from sklearn.metrics import log_loss, roc_auc_score
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder, MinMaxScaler
-from tensorflow.python.keras.utils import multi_gpu_model
+# Note: multi_gpu_model was removed in TF 2.x
+# Use tf.distribute.Strategy instead
 
 from deepctr.feature_column import SparseFeat, DenseFeat,get_feature_names
 from deepctr.models import DeepFM
